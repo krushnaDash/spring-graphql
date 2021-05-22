@@ -42,25 +42,12 @@
 			<version>5.0.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.graphql-java/graphql-java -->
-		<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-java</artifactId>
-			<version>16.2</version>
-		</dependency>
+
 
 		<dependency>
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-java-tools</artifactId>
 			<version>5.2.4</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-		<!-- Google common io -->
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>r05</version>
 		</dependency>
 
 

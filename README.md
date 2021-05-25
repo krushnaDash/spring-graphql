@@ -1,5 +1,7 @@
 # spring-graphql
 
+![Architectural overview](GraphQLWithSprintBoot.png)
+
 Schema example
 
 	type Book {

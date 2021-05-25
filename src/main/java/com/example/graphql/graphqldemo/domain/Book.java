@@ -14,6 +14,22 @@ public class Book {
 	String id;
 	String name;
 	int pageCount;
+
+	/**
+	 * As per schema we should have a field author By default it will look for below
+	 * in
+	 * 
+	 * com.example.graphql.graphqldemo.domain.Book.author()
+	 * com.example.graphql.graphqldemo.domain.Book.getAuthor()
+	 * com.example.graphql.graphqldemo.domain.Book.author
+	 * 
+	 * To solve this we can write a resolver and there we can provide a method with
+	 * above signature example
+	 * 
+	 * @com.example.graphql.graphqldemo.resolver.BookResolver
+	 * 
+	 */
+
 	String authorId;
 
 	public String getId() {

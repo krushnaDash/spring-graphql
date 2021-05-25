@@ -10,8 +10,6 @@ import com.example.graphql.graphqldemo.dao.AuthorDao;
 import com.example.graphql.graphqldemo.dao.BookDao;
 import com.example.graphql.graphqldemo.domain.Author;
 import com.example.graphql.graphqldemo.domain.Book;
-import com.example.graphql.graphqldemo.resolver.AuthorResolver;
-import com.example.graphql.graphqldemo.resolver.BookResolver;
 import com.example.graphql.graphqldemo.resolver.Mutation;
 import com.example.graphql.graphqldemo.resolver.Query;
 
@@ -44,16 +42,6 @@ public class GraphqlConfiguration {
             authors.add(author);
         }
         return new AuthorDao(authors);
-    }
-
-    @Bean
-    public BookResolver bookResolver(AuthorDao authorDao) {
-        return new BookResolver(authorDao);
-    }
-
-    @Bean
-    public AuthorResolver authorResolver(BookDao bookDao) {
-        return new AuthorResolver(bookDao);
     }
 
     @Bean

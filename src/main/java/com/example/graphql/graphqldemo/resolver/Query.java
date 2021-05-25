@@ -1,6 +1,8 @@
 package com.example.graphql.graphqldemo.resolver;
 
 import java.util.List;
+import java.util.Optional;
+
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import com.example.graphql.graphqldemo.dao.BookDao;
 import com.example.graphql.graphqldemo.domain.Book;
@@ -18,13 +20,17 @@ import com.example.graphql.graphqldemo.domain.Book;
  *         scheme has a method in one of these classes with the same name.
  */
 public class Query implements GraphQLQueryResolver {
-    private BookDao postDao;
+    private BookDao bookDao;
 
     public Query(BookDao postDao) {
-        this.postDao = postDao;
+        this.bookDao = postDao;
     }
 
     public List<Book> getRecentBooks(int count, int offset) {
-        return postDao.getRecentBooks(count, offset);
+        return bookDao.getRecentBooks(count, offset);
+    }
+    
+    public Optional<Book> getBookById(String id){
+    	return bookDao.getBookById(id);
     }
 }

@@ -1,5 +1,4 @@
 # spring-graphql
-More from here https://krushna-dash.medium.com/graphql-is-an-alternative-to-rest-3958a8d62ff0
 
 ![Architectural overview](GraphQLWithSprintBoot.png)
 
